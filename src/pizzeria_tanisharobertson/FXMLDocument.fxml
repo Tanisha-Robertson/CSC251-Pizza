@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="774.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pizzeria_tanisharobertson.PizzaController">
+   <children>
+      <Button layoutX="267.0" layoutY="627.0" mnemonicParsing="false" onAction="#submitButtonListener" text="Submit" />
+      
+
+      <RadioButton fx:id="smallPizza" layoutX="101.0" layoutY="250.0" mnemonicParsing="false" text="Small">
+         <toggleGroup>
+            <ToggleGroup fx:id="sizeGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="mediumPizza" layoutX="178.0" layoutY="250.0" mnemonicParsing="false" text="Medium" toggleGroup="$sizeGroup" />
+      <RadioButton fx:id="largePizza" layoutX="265.0" layoutY="250.0" mnemonicParsing="false" text="Large" toggleGroup="$sizeGroup" />
+      <RadioButton fx:id="extraLargePizza" layoutX="362.0" layoutY="250.0" mnemonicParsing="false" text="Extra Large" toggleGroup="$sizeGroup" />
+      <RadioButton fx:id="thinCrust" layoutX="32.0" layoutY="338.0" mnemonicParsing="false" text="Thin">
+         <toggleGroup>
+            <ToggleGroup fx:id="crustGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="handTossedCrust" layoutX="108.0" layoutY="338.0" mnemonicParsing="false" text="Hand-Tossed" toggleGroup="$crustGroup" />
+      <RadioButton fx:id="deepDishCrust" layoutX="224.0" layoutY="338.0" mnemonicParsing="false" text="Deep-Dish" toggleGroup="$crustGroup" />
+      <RadioButton fx:id="stuffedCrust" layoutX="328.0" layoutY="338.0" mnemonicParsing="false" text="Stuffed-Crust" toggleGroup="$crustGroup" />
+      <RadioButton fx:id="gutBusterCrust" layoutX="451.0" layoutY="338.0" mnemonicParsing="false" text="Gut-Buster" toggleGroup="$crustGroup" />
+      <CheckBox fx:id="pepperoniTop" layoutX="32.0" layoutY="433.0" mnemonicParsing="false" text="Pepperoni" />
+      <CheckBox fx:id="sausageTop" layoutX="34.0" layoutY="469.0" mnemonicParsing="false" text="Sausage" />
+      <CheckBox fx:id="hamTop" layoutX="34.0" layoutY="503.0" mnemonicParsing="false" text="Ham" />
+      <CheckBox fx:id="baconTop" layoutX="126.0" layoutY="433.0" mnemonicParsing="false" text="Bacon" />
+      <CheckBox fx:id="chickenTop" layoutX="125.0" layoutY="469.0" mnemonicParsing="false" text="Chicken" />
+      <CheckBox fx:id="hamburgerTop" layoutX="126.0" layoutY="503.0" mnemonicParsing="false" text="Hamburger" />
+      <CheckBox fx:id="extraCheeseTop" layoutX="231.0" layoutY="433.0" mnemonicParsing="false" text="Extra Cheese" />
+      <CheckBox fx:id="onionsTop" layoutX="231.0" layoutY="469.0" mnemonicParsing="false" text="Onions" />
+      <CheckBox fx:id="greenPeppersTop" layoutX="231.0" layoutY="503.0" mnemonicParsing="false" text="Green Peppers" />
+      <CheckBox fx:id="mushtoomsTop" layoutX="347.0" layoutY="433.0" mnemonicParsing="false" text="Mushrooms" />
+      <CheckBox fx:id="blackOlivesTop" layoutX="347.0" layoutY="469.0" mnemonicParsing="false" text="Black Olives" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pizza%20slice_1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="172.0" layoutY="28.0" text="Group #1">
+         <font>
+            <Font name="AR BLANCA" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="220.0" text="Size:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="307.0" text="Crust:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="398.0" text="Toppings:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
